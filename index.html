@@ -73,5 +73,22 @@ onclick="document.location='default.asp'">piggy's library</button>
     "haha";
   }
 </script>
+<script>
+  function lovelythings(sw) {
+    var pic;
+    if (sw==0) {
+      pic = "P1060700.JPG"
+    } else {
+      pic = "P1060578.JPG"
+    }
+    document.getElementById('myImage').src = pic;
+  }
+</script>
+<img id="myImage" src="P1060700.JPG" width="243" height="432">
+<p>
+  <button type="button" onclick="lovelythings(0)">kissing vase</button>
+  <button type="button" onclick="lovelythings(2)">Pigstink</button>
+  </p>
+
   </body>
 </html>
