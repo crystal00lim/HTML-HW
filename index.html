@@ -102,34 +102,6 @@ onclick="document.location='default.asp'">piggy's library</button>
   <text fill="#ffffff" font-size="45" font-family="Verdana"
   x="40" y="83">piggy</text>
 </svg>
-<svg id="second" height="130" width="500">
-  <defs>
-    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"
-      style="stop-color:blue;stop-opacity:1" />
-      <stop offset="100%"
-      style="stop-color:red;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <ellipse id="second" cx="100" cy="70" rx="85" ry="55" fill="url(#grad2)" />
-  <text fill="#ffffff" font-size="45" font-family="Verdana"
-  x="40" y="83">piggy</text>
-</svg>
-<script>
-  function coloring(sw) {
-    var ellipse;
-    if (sw==0) {
-      pic = "first"
-    } else {
-      pic = "second"
-    }
-    document.getElementById('first').svg = canvas;
-  }
-</script>
-<ellipse id="second" cx="100" cy="70" rx="85" ry="55" fill="url(#grad2)" />
-<p>
-  <button type="button" onclick="coloring(0)">kissing vase</button>
-  <button type="button" onclick="coloring(1)">Pigstink</button>
-  </p>
+
   </body>
 </html>
