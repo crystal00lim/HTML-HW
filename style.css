@@ -1,26 +1,16 @@
 body {
-  background-color: powderblue;
+  background-image: url('portrait-56.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
 }
-.moon {
-  background-size: 200px 200px
+#header {
+  background-color: black;
+  font-family: Montserrat;
+  opacity: 0.8;
+  padding-bottom: 5px;
 }
-  a:link {
-        color: palevioletred;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      a:visited {
-        color: peru;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      a:hover {
-        color: green;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      a:active {
-        color: pink;
-        background-color: transparent;
-        text-decoration: underline;
-      }

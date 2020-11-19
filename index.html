@@ -1,90 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>repl.it</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />  
-  </head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
   <body>
-  
-    <script src="script.js"></script>
- This is an active linked image:
-<a href = "https://google.com"><img src = "portrait-56.jpg" width="432" height="243"></a>
-<br>
-    <h1 style="color:purple;font-family:courier;">He<font color="red">ll</font>o</h1>
-<div style="background-color:lightgray;color:green;padding:10px;text-align:center;"
-<p title="random paragraph">what's <sub>up</sub><br>how is it going?<br><i>is there anyone who will answer me?</i><br><b><font style="color:blue;">no</font></b><br>not in 10<sup>10</sup> years.</p>
-</div>
-This is not an active linked image (But it is named):
-<img src="portrait-56.jpg" title="self portrait" alt="self portrait" width="432" height="243">
-<p style="color:red;">Yahh!! RED!</p>
-<h1>Hello again!</h1>
-<a href = "https://www.google.com">Link to google</a>
-<h2 style="background-color:tomato;">Heading size <span style="border:2px solid mediumseagreen;background-color:white;">can be changed!</span></h2>
-<h3 style="border: 2px solid mediumseagreen;">Even smaller heading</h3>
-<h6 style="background-color:lightgray;">The smallest heading font possible</h6>
-<p style="background-color:rgba(255, 99, 71, 0.5);">Here is a saying I heard in a movie:</p>
-<blockquote>Learning <b>sculpture</b> taught me how to <i>chisel</i> away at life to <b>fit</b> yours. But you <b>never</b> realized that I'm made out of flesh and bones. It <i>hurts</i>.</blockquote>
-<p style="text-align:right">from a movie. </p>
-<!-- so apparently if I write anything here, it will not show on the page... -->
-<p style="background-color:dodgerblue;">Can paragraphs also be highlighted in a color?</p>
-<!-- this is from "The moon and sixpence" -->
-is it possible to get rid of the spacing in between the paragraph and the blockquote?
-<!-- no -->
-<blockquote><span style="color:rgb(60, 179, 113);">He was perfectly cool,</span><br><font style="color:rgb(255, 165, 0);">and his eyes kept that mocking smile </font><font style="color:hsl(300,100%,50%);">which made all I said seem rather <i>foolish</i>.</font><br><font style="background-color:rgba(106, 90, 205, 0.5);">I paused for a little while to consider what I had better say next.</font><br><font style="background-color:rgb(0,0,255);color:white;";>But it was <b>he</b> who spoke first.</font></blockquote>
-<p style="color:black;">Taste of Javascript.</p>
-<button type="Button" onclick="myfunction()">piggy's button</button>
-<p id="demo"><a style="color:black;">Piggy might virtually butthole you.</a></p>
-<script>
-  function myfunction() {
-    document.getElementById("demo").innerHTML =
-    "Piggy buttholed you!";
-  }
-</script>
-<button 
-onclick="document.location='default.asp'">piggy's library</button>
-<button type="Button" onclick="myfunction2()">piggy's library!</button>
-<p id="demo2"><a style="color:black;">Hi Hi, if you click on the piggy's library with an exclamation mark, this line of words will change into something else. Dare you to try.</a></p>
-<script>
-  function myfunction2() {
-    document.getElementById("demo2").innerHTML =
-    "haha";
-  }
-</script>
-
-<img id="myImage" src="P1060700.JPG" width="243" height="432">
-<p>
-  <button type="button" onclick="lovelythings(0)">kissing vase</button>
-  <button type="button" onclick="lovelythings(1)">Pigstink</button>
-  </p>
-<script>
-  function myfunction5() {
-    document.getElementById("first").innerHTML =
-    "Piggy buttholed you!";
-  }
-</script>
-<p><a type+"button" onclick="myfunction5">type</a></p>
-<!-- 612 width , 792 height. there seems to be no way of getting the svg to becoming smaller than it is. edited viewbox, edited height and width, added viewport and preserveAspectRatio. -->
-<svg class="moon" width="612px" height="792px" viewport="100px 100px" preserveAspectRatio="1:1">
-<path fill="yellow" stroke="transparent"  stroke-miterlimit="10" d="M245.78,336.439c0-44.073,27.313-81.766,65.935-97.08
-	c-11.903-4.719-24.879-7.315-38.462-7.315c-57.656,0-104.396,46.739-104.396,104.396s46.739,104.396,104.396,104.396
-	c13.583,0,26.559-2.596,38.462-7.315C273.093,418.205,245.78,380.513,245.78,336.439z"/>
-<polygon fill="yellow" stroke="transparent"  stroke-miterlimit="10" points="358.853,290.676 348.127,282.135 335.012,286.128 
-	339.82,273.289 331.969,262.048 345.666,262.654 353.93,251.714 357.587,264.928 370.545,269.407 359.107,276.968 "/>
-<polygon fill="yellow" stroke="transparent" stroke-miterlimit="10" points="321.641,351.235 302.932,346.634 288.535,359.438 
-	287.129,340.223 270.503,330.488 288.343,323.213 292.464,304.392 304.896,319.111 324.069,317.215 313.912,333.587" />
-<polygon fill="yellow" stroke="transparent"  stroke-miterlimit="10" points="412.152,320.657 402.379,317.343 394.107,323.515 
-	394.239,313.196 385.813,307.237 395.668,304.173 398.731,294.318 404.69,302.744 415.011,302.612 408.838,310.883 "/>
-<polygon fill="yellow" stroke="transparent"  stroke-miterlimit="10" points="369.26,440.834 357.776,407.818 324.069,398.562 
-	351.921,377.438 350.31,342.52 379.005,362.48 411.717,350.157 401.601,383.617 423.429,410.918 388.48,411.637 "/>
-</svg>
-
-<svg>
-  <path d="M 60 40 C 0 10, -20 90, 50 90 C 0 45, 70 40, 60 40z" fill="yellow" stroke="black"></path>
-<polygon points="10,1 4,18 19,8 1,8 16,18"/>
-<polygon points="30,11 24,28 39,18 21,18 36,28"/>
-<polygon points="10,101 4,118 19,108 1,108 16,118"/>
-</svg>
+  <script src="script.js"></script>
+  <div class="container-fluid">
+  <div clas="row">
+    <div class="col-sm-12" id="header"><h1>Crystal Lim</h1></div>
+  </div>
+  </div>
   </body>
 </html>
