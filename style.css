@@ -1,5 +1,5 @@
 body {
-  background-image: url('portrait-56.jpg');
+  background-image: url('portrait.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
@@ -8,14 +8,20 @@ body {
   -moz-background-size: cover; 
   -o-background-size: cover; 
 }
-#header {
-  background-color: black;
-  font-family: Montserrat;
-  opacity: 0.8;
-}
 .centered {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  font-size: 300%;
+  color: white;
+  font-family: Roboto;
+  font-weight: 300;
+}
+#opening {
+  font-size: 150%;
+  color: white;
+  font-family: Roboto;
+  font-weight: 300;
+
 }
