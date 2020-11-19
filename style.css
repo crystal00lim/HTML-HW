@@ -12,5 +12,10 @@ body {
   background-color: black;
   font-family: Montserrat;
   opacity: 0.8;
-  padding-bottom: 5px;
+}
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
