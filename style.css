@@ -1,15 +1,39 @@
-/* 
-body {
-  background-image: url('portrait.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  height: auto;
-  -webkit-background-size: cover; 
-  -moz-background-size: cover; 
-  -o-background-size: cover; 
+h3 {
+  margin: 10px 0 30px 0;
+  letter-spacing: 10px;
+  font-size: 20px;
+  color: aliceblue;
 }
-*/
+.carousel-inner img {
+  width: 100%;
+  margin: auto;
+}
+.carousel-caption h3 {
+  color: aliceblue !important;
+}
+a:link {
+  color: aliceblue;
+  background-color: transparent;
+  text-decoration: none; 
+}
+a:visited {
+  color: aliceblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: plum;
+  background-color: transparent;
+  text-decoration: none;
+}
+.img {
+  position: relative;
+}
 .container {
   position: relative;
 }
@@ -22,7 +46,8 @@ body {
   color: white;
   font-family: Roboto;
   font-weight: 300;
-  background-color: rgba(29, 29, 29, 0.3);
+/*  background-color: rgba(29, 29, 29, 0.3);
+*/
   text-align: center;
   padding: 5px;
 }
@@ -30,12 +55,15 @@ body {
   font-size: 50%;
   color: white;
   font-family: Roboto;
+  margin: 0px;
+  padding: 0px;
 }
 #opening {
-  font-size: 150%;
+  font-size: 140%;
   color: white;
   font-family: Roboto;
   font-weight: 300;
+  line-height: 0.8;
 }
 a.link {
   color: white;
