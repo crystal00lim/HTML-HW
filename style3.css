@@ -1,0 +1,208 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+body {
+  background: #2e394d;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+* {
+	box-sizing: border-box;
+	&:before, &:after {
+		content: '';
+		position: absolute;
+	}
+}
+
+.toggle-wrapper {
+	flex: 1 1 calc(100% / 3);
+	min-height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	background: #dec387;
+}
+input {
+	height: 40px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 40px;
+}
+.name {
+	width: 80%;
+	position: absolute;
+	font: 500 14px 'Rubik', sans-serif;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+	bottom: 15px;
+	right: 15px;
+	text-align: right;
+}
+.toggle {
+	 position: relative;
+	 display: inline-block;
+}
+ label.toggle-item {
+	 width: 7.5em;
+	 background: #2e394d;
+	 height: 3em;
+	 display: inline-block;
+	 border-radius: 50px;
+	 margin: 40px;
+	 position: relative;
+	 transition: all 0.3s ease;
+	 transform-origin: 20% center;
+	 cursor: pointer;
+}
+ .checkcross .check {
+	 border-radius: 50%;
+	 width: 2.0em;
+	 height: 2.5em;
+	 position: absolute;
+	 background: #8bc34a;
+	 transition: 0.4s ease;
+	 top: 4.5px;
+	 left: 4.5px;
+}
+
+ .checkcross .check:before {
+	 width: 25px;
+	 transform: rotate(-45deg) translate(-6px, 20px);
+}
+ .checkcross .check:after {
+	 width: 10px;
+	 transform: rotate(45deg) translate(20px, 11px);
+}
+ #checkcross:checked + label .check {
+	 left: 68px;
+	 transform: rotate(360deg);
+	 background: #c34a4a;
+}
+ #checkcross:checked + label .check:before {
+	 width: 20px;
+	 transform: rotate(-45deg) translate(-8px, 18px);
+}
+ #checkcross:checked + label .check:after {
+	 width: 20px;
+	 transform: rotate(45deg) translate(18px, 8px);
+}
+ 
+.switchy {
+  position: relative;
+  display: inline-block;
+}
+.toggle {
+	 position: relative;
+	 display: inline-block;
+}
+.slide .chess {
+	 border-radius: 50%;
+	 width: 2.0em;
+	 height: 2.5em;
+	 position: absolute;
+	 background: #ff7b3e;
+	 transition: 0.4s ease;
+	 top: 4.5px;
+	 left: 8px;
+}
+.slide .chess:before {
+	 width: 20px;
+	 transform: rotate(-45deg) translate(-6px, 20px);
+}
+.slide .chess:after {
+	 width: 10px;
+	 transform: rotate(45deg) translate(20px, 11px);
+}
+#slide:checked + label .chess {
+	 left: 40px;
+	 transform: rotate(360deg);
+	 background: #5feee2;
+}
+#slide:checked + label .chess:before {
+	 width: 20px;
+	 transform: rotate(-45deg) translate(-8px, 18px);
+}
+#slide:checked + label .chess:after {
+	 width: 20px;
+	 transform: rotate(45deg) translate(18px, 8px);
+}
+label.swtichy-item {
+	 width: 80px;
+	 background: #2e394d;
+	 height: 3em;
+	 display: inline-block;
+	 border-radius: 50px;
+	 margin: 0px;
+	 position: relative;
+	 transition: all 0.3s ease;
+	 transform-origin: 20% center;
+	 cursor: pointer;
+}
+input:checked + label .switchy-item {
+  background: antiquewhite;
+}

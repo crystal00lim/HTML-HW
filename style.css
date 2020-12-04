@@ -1,72 +1,77 @@
-h3 {
-  margin: 10px 0 30px 0;
-  letter-spacing: 10px;
-  font-size: 20px;
-  color: aliceblue;
+*
+{
+    user-select: none;
+    -webkit-tap-highlight-color:transparent;
 }
-.carousel-inner img {
-  width: 100%;
-  margin: auto;
+
+body {
+  height: 100vh;
+  margin: 0;
 }
-.carousel-caption h3 {
-  color: aliceblue !important;
+
+input[type="checkbox"] {
+  display: none;
 }
-a:link {
-  color: aliceblue;
-  background-color: transparent;
-  text-decoration: none; 
-}
-a:visited {
-  color: aliceblue;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:hover {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:active {
-  color: plum;
-  background-color: transparent;
-  text-decoration: none;
-}
-.img {
+
+#button {
   position: relative;
+  display: block;
+  width: 445px;
+  height: 300px;
+  border-radius: 350px;
+  cursor: pointer;
+  transform: scale(0.4);
+  margin: 50px auto;
 }
-.container {
+
+.bckgrd {
+  background-color: #000;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-style: solid;
+  border-color: white;
+}
+
+#knob {
+  width: 230px;
+  height: 230px;
+  background-image: url('darylight3.png');
+  background-size: 600px;
   position: relative;
+  top: 32px;
+  left: 30px;
+  border-radius: 290px;
+  transition: 0.4s ease left, 0.4s ease background-position;
+  z-index: 2;
 }
-.centered {
+
+#subscribe,
+#alright {
   position: absolute;
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 300%;
-  color: white;
-  font-family: Roboto;
-  font-weight: 300;
-/*  background-color: rgba(29, 29, 29, 0.3);
-*/
-  text-align: center;
-  padding: 5px;
+  transform: translateY(-50%);
+  font-size: 58px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 250px;
+  z-index: 1;
 }
-.col-sm-4 {
-  font-size: 50%;
+#subscribe {
+  margin-left:270px;
   color: white;
-  font-family: Roboto;
-  margin: 0px;
-  padding: 0px;
 }
-#opening {
-  font-size: 140%;
-  color: white;
-  font-family: Roboto;
-  font-weight: 300;
-  line-height: 0.8;
+#alright {
+  margin-left: 30px;
+  color: black;
 }
-a.link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
+
+#lol-checkbox:checked + #button #knob {
+  left: 180px;
+  background-position: -345px 0;
+}
+
+#lol-checkbox:checked + .bckgrd {
+  background-color: white;
+  border-style: solid;
+  border-color: black;
 }
